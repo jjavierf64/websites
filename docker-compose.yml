@@ -1,0 +1,14 @@
+services:
+  neurona-one:
+    build: ./neurona-one
+    container_name: neurona-one
+    ports:
+      - "8080:80"
+    restart: always
+
+  jjfdez:
+    build: ./jjfdez
+    container_name: jjfdez
+    ports:
+      - "8081:80"
+    restart: always

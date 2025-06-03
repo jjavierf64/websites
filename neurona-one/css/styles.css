@@ -1,0 +1,103 @@
+:root {
+    --color-lightpurple: rgb(93, 49, 120);
+    --color-lighterpurple: rgb(162, 89, 207);
+    --color-darkpurple: #35114B;
+    --color-blackpurple: #0a070a;
+    --bs-link-hover-color-rgb: 93, 49, 120;
+}
+
+
+.bg-purple {
+    /* background: linear-gradient(130deg,  var(--color-lightpurple) 0%, var(--color-darkpurple) 50%, var(--color-blackpurple) 100%); */
+    background: linear-gradient(130deg,  
+                var(--color-lighterpurple) 0%, 
+                var(--color-lightpurple) 20%, 
+                var(--color-darkpurple) 75%, 
+                var(--color-blackpurple) 100%);
+    color: #FFFFFF; 
+}
+
+.blackpurple {
+    background-color: rgba(30, 30, 30,0.4);
+    border: 2px solid var(--color-lightpurple); 
+    border-radius: 27px; 
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 27px; 
+}
+a.fill-div:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: background-color 0.3s ease;
+}
+
+.section-title{
+    font-size: 8vw;
+}
+.service-card {
+    /* border: 1px solid #FFFFFF;  */
+    border-radius: 10px; 
+    color: #FFFFFF; 
+    padding: 20px;
+    margin: auto; 
+    text-align: center;
+}
+.icon {
+    font-size: 64px; /* Iconos más grandes */
+}
+.icon-medium {
+    font-size: 32px; /* Iconos más grandes */
+    color: #FFFFFF;
+    margin: 4px;
+}
+.icon-img{
+    height: 64px;
+    width: 64px;
+}
+
+.ubuntu-navbar{
+    height: 60vh; 
+    position: fixed; 
+    top: 20vh; 
+    padding-right: 27px; 
+    right: -27px;
+    z-index: 100;
+}
+.big-card{
+    padding: 5em;
+}
+
+/* Overwrite Bootstrap */
+.nav-link{    
+    color: #FFFFFF;
+    font-size: 5vh;
+    margin: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-link:hover{
+    color: var(--color-lighterpurple);
+}
+.nav-img{
+    height: 5vh;
+    width: 5vh;
+}
+.nav-img:hover{
+    /* transition: filter 0.3s ease; */
+    filter: invert(50%) 
+            sepia(100%) 
+            saturate(600%) 
+            hue-rotate(225deg) 
+            brightness(85%);
+}
+.nav{
+    margin: auto;
+}
