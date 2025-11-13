@@ -1,148 +1,310 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV: Javier Fernández</title>
+  <title>Javier Fernández</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Hoja de estilos externa -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <!-- Navegación -->
+  <!-- Navigation -->
   <header>
     <div class="container">
       <nav>
         <div class="logo">Javier Fernández</div>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="nav-links">
+          <li class="nav-close">
+            <button class="nav-close-btn" type="button" aria-label="Cerrar menú">Cerrar ✕</button>
+          </li>
           <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#education">Educación</a></li>
           <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#langs">Idiomas</a></li>
-          <li><a href="#certs">Certificados</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#research">Investigación</a></li>
+          <li><a href="#education">Educación</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Más ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#achievements">Logros</a></li>
+              <li><a href="#news">Noticias</a></li>
+              <li><a href="#workshops">Talleres</a></li>
+              <li><a href="#langs">Idiomas</a></li>
+              <li><a href="#certs">Certificados</a></li>
+            </ul>
+          </li>
           <li><a href="#contact">Contacto</a></li>
-          <li><a href="/" class="lang-switch">English</a></li>
+          <li><a href="/" class="lang-switch">Inglés</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Sección principal -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <h1>Jose Javier Fernández González</h1>
-      <p>Ingeniero Físico | Científico de Datos</p>
+      <p>Físico Ingeniero · M.Sc. en Ciencia y Tecnología Cuántica · Computación Cuántica y HPC</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Contáctame</a>
+        <a href="/assets/docs/JavierFernandez.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Descargar CV</a>
+      </div>
     </div>
   </section>
 
-  <!-- Sobre mí -->
+  <!-- About Section -->
   <section id="about" class="about container">
-    <img src="/assets/imgs/javi.jpg" alt="Foto de perfil" />
+    <img src="/assets/imgs/javi.jpg" alt="Foto de perfil de Jose Javier Fernández" />
     <div class="about-text">
       <h2>Sobre mí</h2>
-      <p>Soy estudiante de último año de Ingeniería Física en el Instituto Tecnológico de Costa Rica y ocasionalmente tomo cursos en la Universidad de Costa Rica. Mi motivación es entender el mundo, cómo funciona y cómo generar un impacto positivo. Disfruto liderar proyectos y colaborar con personas de diversas áreas del conocimiento.</p>
-      
-      <p>He sido reconocido con la beca Honor y Excelencia Académica durante toda mi carrera. Además, he competido en esgrima, obteniendo medalla de bronce en el Campeonato Centroamericano. Mi visión es combinar el conocimiento de la física y la tecnología para desarrollar soluciones innovadoras.</p>
+      <p>Soy un Físico Ingeniero especializado en computación cuántica, cómputo de alto rendimiento y ciencia de datos. Actualmente curso la Maestría en Ciencia y Tecnología Cuántica en la Universidad de Barcelona, con énfasis en computación cuántica, teoría de la información cuántica, algoritmos y técnicas experimentales.</p>
+
+      <p>Mi trabajo abarca el desarrollo de software, criptografía poscuántica y optimización algorítmica en entornos industriales de I+D. Disfruto construir herramientas computacionales eficientes y escalables, y colaborar con equipos multidisciplinarios para resolver problemas técnicos con impacto real.</p>
+
+      <p>Además de investigación y desarrollo, fundé Quantum Learning Wave, una iniciativa educativa independiente que diseña talleres y material abierto sobre computación cuántica y física aplicada. Me motiva la curiosidad científica, el pensamiento riguroso y la posibilidad de contribuir al avance de tecnologías cuánticas emergentes.</p>
     </div>
   </section>
 
-  <!-- Educación -->
+  <!-- Experience Section -->
+  <section id="experience" class="container">
+    <h2>Experiencia Profesional</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Data Scientist Student Worker (2024 – 2025)</h3>
+        <span>Intel Corporation, Heredia, Costa Rica</span>
+        <p>Desarrollé y mantuve herramientas automatizadas de análisis de datos en Python para procesar datos de ingeniería internos. Estas herramientas redujeron tiempos de depuración y mejoraron la eficiencia de múltiples unidades de negocio. Colaboré con equipos multifuncionales en la Tech Leadership Office.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Fundador y Coordinador – Quantum Learning Wave (2024 – Presente)</h3>
+        <span>Cartago, Costa Rica</span>
+        <p>Creé una iniciativa educativa independiente en computación cuántica y física aplicada. Diseñé talleres y materiales educativos de código abierto utilizados por estudiantes en Costa Rica, promoviendo una formación rigurosa y accesible en tecnologías cuánticas.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Ingeniero en Práctica – Calidad (2024 – Presente)</h3>
+        <span>Terumo Blood and Cell Technologies · Cartago, Costa Rica</span>
+        <p>Participación en análisis de datos de múltiples fuentes para identificar tendencias, realizar evaluaciones estadísticas y generar información relevante para la toma de decisiones y el control de procesos. Experiencia en sistemas de calidad, protocolos de la industria de dispositivos médicos y prácticas de mejora continua.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Practicante – Metrología Dimensional (2023 – 2024)</h3>
+        <span>Laboratorio Costarricense de Metrología (LACOMET), San José, Costa Rica</span>
+        <p>Lideré el desarrollo de un sistema automatizado de medición de bloques patrón utilizando Python y comunicación serial. Implementé una GUI y módulos de control que mejoraron la precisión y redujeron significativamente el tiempo de operación manual.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Investigación en Criptografía Poscuántica (2023 – 2024)</h3>
+        <span>Intel Corporation & Costa Rica Institute of Technology</span>
+        <p>Trabajé en la caracterización del rendimiento del algoritmo de criptografía poscuántica CRYSTALS-Kyber en CPU de alto desempeño. Utilicé sistemas HPC, herramientas de perfilado y análisis estadístico para evaluar comportamiento y escalabilidad.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2>Proyectos Seleccionados</h2>
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Quantum Machine Learning – Hackathon Qiskit Fall Fest</h3>
+        <p>Desarrollo de un flujo de trabajo de aprendizaje automático cuántico usando Qiskit durante el #QiskitFallFest25.</p>
+      </article>
+
+      <article class="card">
+        <h3>Sistema Automatizado de Medición de Bloques Patrón</h3>
+        <p>Software en Python para control de un sistema automatizado de metrología dimensional. Incluyó comunicación serial, GUI y procesamiento de datos.</p>
+      </article>
+
+      <article class="card">
+        <h3>Plataforma de Análisis y Visualización de Datos – Intel</h3>
+        <p>Herramienta web interna (Python, MongoDB, Pandas, Dash) para procesar datos de ingeniería, generar reportes automáticos y acelerar procesos de depuración.</p>
+      </article>
+
+      <article class="card">
+        <h3>Benchmarking de Criptografía Poscuántica</h3>
+        <p>Caracterización de rendimiento del algoritmo CRYSTALS-Kyber integrando scripting, herramientas de perfilado y análisis estadístico.</p>
+      </article>
+
+      <article class="card">
+        <h3>Materiales Educativos – Quantum Learning Wave</h3>
+        <p>Diseño de notas, notebooks y ejercicios abiertos para talleres de computación cuántica y física cuántica a nivel universitario.</p>
+      </article>
+
+      <article class="card">
+        <h3>Sitio Web Personal e Infraestructura</h3>
+        <p>Plataforma de sitio web <a href="https://github.com/jjavierf64/websites" target="_blank" rel="noopener">autoalojada y de código abierto</a>, desarrollada y mantenida usando servidores Linux, Docker y flujos de despliegue basados en Git.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="container">
+    <h2>Intereses de Investigación</h2>
+    <ul class="pill-list">
+      <li>Computación Cuántica e Información Cuántica</li>
+      <li>Algoritmos Cuánticos Variacionales y Quantum Machine Learning</li>
+      <li>Criptografía Poscuántica y Seguridad Algorítmica</li>
+      <li>Cómputo de Alto Rendimiento y Redes Tensoriales</li>
+      <li>Física Aplicada, Metrología y Simulaciones Numéricas</li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
   <section id="education" class="container">
     <h2>Educación</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <h3>Licenciatura en Ingeniería Física (2020 - Presente)</h3>
+        <h3>M.Sc. en Ciencia y Tecnología Cuántica (2025 – 2026)</h3>
+        <span>Universidad de Barcelona, España</span>
+        <p>Enfoque en computación cuántica, teoría de la información cuántica, algoritmos y técnicas experimentales. Programado en un centro clave de investigación cuántica.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>B.Sc. en Ingeniería Física (2020 – 2025)</h3>
         <span>Instituto Tecnológico de Costa Rica, Cartago, Costa Rica</span>
-        <p>Integración de conocimientos teóricos en física con experiencia práctica en ingeniería, enfocado en resolver problemas y explorar aplicaciones de descubrimientos científicos recientes. Vicepresidente de la Asociación de Estudiantes de Ingeniería Física. Beneficiario de la beca Honor y Excelencia Académica.</p>
+        <p>Integración de física teórica e ingeniería práctica. Mención Honorífica y beca de Excelencia Académica durante toda la carrera. Tesis sobre caracterización del rendimiento del algoritmo CRYSTALS-Kyber.</p>
       </div>
       <div class="timeline-item">
-        <h3>Bachillerato Internacional (2018 - 2019)</h3>
-        <span>Colegio Nueva Generación, Heredia, Costa Rica</span>
-        <p>Programa de BI que brindó una formación humanística y una comprensión amplia del mundo. La participación en actividades culturales y voluntariado fomentó una perspectiva holística de la sociedad.</p>
+        <h3>Bachillerato Internacional (2018 – 2019)</h3>
+        <span>New Generation School, Heredia, Costa Rica</span>
+        <p>Programa preuniversitario con énfasis en humanidades y ciencias, incluyendo actividades culturales y servicio comunitario.</p>
       </div>
     </div>
   </section>
 
-  <!-- Experiencia -->
-  <section id="experience" class="container">
-    <h2>Experiencia</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Práctica en Ciencia de Datos (2024 - Presente)</h3>
-        <span>Intel Corporation, Heredia, Costa Rica</span>
-        <p>Desarrollo de una herramienta automatizada de análisis de datos para la Oficina de Liderazgo Técnico. Implementación y mantenimiento del backend y frontend, mejorando la eficiencia del flujo de datos y promoviendo una cultura de resultados rápidos.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Investigador en Criptografía Post-Cuántica (2024)</h3>
-        <span>Intel Corporation & Instituto Tecnológico de Costa Rica</span>
-        <p>Proyecto de caracterización de un algoritmo de encriptación post-cuántica en CPUs de alto rendimiento. Trabajo con HPC, herramientas de recolección de datos de Intel, scripting y análisis estadístico de resultados.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Líder y Coordinador (2024 - Presente)</h3>
-        <span>Quantum Learning Wave, Cartago, Costa Rica</span>
-        <p>Iniciativa independiente enfocada en la educación en física cuántica y computación cuántica. Creación de material educativo práctico y tecnológico, impartiendo charlas y cursos a una audiencia amplia.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Pasantía - Metrología Dimensional (2023 - 2024)</h3>
-        <span>Laboratorio de Metrología de Costa Rica, San José, Costa Rica</span>
-        <p>Lideré el desarrollo de un sistema automatizado para medición dimensional de bloques patrón. Aplicación de conocimientos en metrología, diseño de circuitos, manejo de datos, automatización con Python y comunicación serial con instrumentación científica.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Habilidades -->
+  <!-- Skills Section -->
   <section id="skills" class="skills container">
-    <h2>Habilidades</h2>
+    <h2>Habilidades Técnicas</h2>
     <div class="skills-categories">
       <div class="category">
-        <h3>Física e Ingeniería</h3>
+        <h3>Computación Cuántica</h3>
         <ul>
-          <li>Metrología</li>
-          <li>Física Cuántica</li>
-          <li>Simulaciones Monte Carlo</li>
-          <li>Modelos Matemáticos</li>
-          <li>Probabilidad y Estadística</li>
-          <li>Investigación Científica</li>
-          <li>Instrumentación</li>
+          <li>Qiskit, Cirq</li>
+          <li>Conceptos básicos de algoritmos y circuitos cuánticos</li>
+          <li>Teoría de la información cuántica</li>
         </ul>
       </div>
       <div class="category">
-        <h3>Computación y Análisis de Datos</h3>
+        <h3>Programación</h3>
         <ul>
-          <li>Python y C++</li>
-          <li>Qiskit y Cirq</li>
-          <li>HPC y MPI</li>
-          <li>COMSOL</li>
-          <li>LabView</li>
-          <li>Minitab y R</li>
+          <li>Python, Git</li>
+          <li>MATLAB, R</li>
+          <li>Frameworks: Flask, Dash, Pandas</li>
+          <li>Desarrollo web básico</li>
         </ul>
       </div>
       <div class="category">
-        <h3>Diseño y Simulación</h3>
+        <h3>HPC y Computación</h3>
         <ul>
-          <li>SolidWorks</li>
-          <li>AutoCAD</li>
-          <li>Matlab</li>
-          <li>Diseño Electrónico Asistido</li>
-          <li>Simulación Computacional</li>
+          <li>Cómputo de Alto Rendimiento (HPC)</li>
+          <li>Sistemas Linux, Bash, gestión de clústeres</li>
+          <li>Entornos remotos y en la nube</li>
         </ul>
       </div>
       <div class="category">
-        <h3>Software y Herramientas</h3>
+        <h3>Ciencia de Datos</h3>
         <ul>
-          <li>Administración de Sistemas Linux</li>
-          <li>Terminal Bash y Acceso Remoto</li>
-          <li>LaTeX</li>
-          <li>Office (Excel, VBA, Word, PowerPoint)</li>
-          <li>LabView</li>
+          <li>Limpieza y preprocesamiento de datos</li>
+          <li>Modelado estadístico</li>
+          <li>Visualización y generación de reportes</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Ingeniería y Física</h3>
+        <ul>
+          <li>Mecánica cuántica</li>
+          <li>Metrología e instrumentación</li>
+          <li>Métodos numéricos y simulación</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Herramientas CAD y Simulación</h3>
+        <ul>
+          <li>COMSOL Multiphysics</li>
+          <li>SolidWorks, AutoCAD</li>
+          <li>Microsoft Excel (incl. VBA)</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Idiomas -->
+  <!-- Achievements Section -->
+  <section id="achievements" class="container">
+    <h2>Logros</h2>
+    <div class="two-column">
+      <div>
+        <h3>Becas y Reconocimientos</h3>
+        <ul>
+          <li>Beca de Excelencia Académica – Programa completo de Ingeniería Física en el TEC (2020–2025)</li>
+          <li>Beca completa – Programa de computación cuántica Qubit by Qubit (2023–2024)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Deportes</h3>
+        <ul>
+          <li>Medalla de Bronce – Campeonato Centroamericano de Esgrima</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- News / Highlights Section -->
+  <section id="news" class="container">
+    <h2>Noticias Recientes</h2>
+    <div class="cards-grid">
+      <article class="card">
+        <h3>M.Sc. en Ciencia y Tecnología Cuántica</h3>
+        <p>Inicio de estudios de Maestría en Ciencia y Tecnología Cuántica en la Universidad de Barcelona, uniéndome a un entorno activo de investigación en tecnologías cuánticas.</p>
+        <p class="card-meta">Barcelona, 2025</p>
+      </article>
+      <article class="card">
+        <h3>Qiskit Fall Fest 2025 – Hackathon de ML Cuántico</h3>
+        <p>Participación en el #QiskitFallFest25 en Barcelona, trabajando con Qiskit y técnicas de aprendizaje automático cuántico.</p>
+        <p class="card-meta">Instituto de Ciencias del Cosmos (ICCUB), 2025</p>
+      </article>
+      <article class="card">
+        <h3>Quantum Learning Wave</h3>
+        <p>Coordinación continua de Quantum Learning Wave, ofreciendo talleres y material abierto para hacer más accesible la educación en computación cuántica en Costa Rica.</p>
+        <p class="card-meta">Cartago, 2024–Presente</p>
+      </article>
+    </div>
+    <p class="center-text">
+      Para más actualizaciones, visita
+      <a href="https://www.linkedin.com/in/j-javier-fernandez" target="_blank" rel="noopener">LinkedIn</a>.
+    </p>
+  </section>
+
+  <!-- Workshops / Volunteering Section -->
+  <section id="workshops" class="container">
+    <h2>Talleres, Liderazgo y Voluntariado</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Project Management Técnico – IBM Qiskit Fall Fest</h3>
+        <p>Apoyo en la organización y coordinación técnica de un evento Qiskit Fall Fest, conectando estudiantes con herramientas de computación cuántica.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Instructor – Talleres de Python, Linux y LaTeX</h3>
+        <p>Impartí talleres para estudiantes universitarios sobre programación, redacción científica y uso eficiente de herramientas de código abierto.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Voluntario – ASVO y Legatos Mundi</h3>
+        <p>Participación en actividades de protección ambiental en áreas silvestres y en iniciativas educativas mediante Legatos Mundi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
   <section id="langs" class="skills container">
     <h2>Idiomas</h2>
     <div class="skills-categories">
@@ -152,52 +314,47 @@
       </div>
       <div class="category">
         <h3>Inglés</h3>
-        <p>Avanzado <br> TOEFL 108</p>
+        <p>Avanzado (C1)</p>
       </div>
       <div class="category">
         <h3>Alemán</h3>
-        <p>Intermedio <br> B1</p>
-      </div>
-  </section>
-
-  <!-- Certificados y Cursos -->
-  <section id="certs" class="container">
-    <h2 class="fade-in">Certificados y Cursos</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Qubit by Qubit (2023 - 2024)</h3>
-        <span>The Coding School, California, USA</span>
-        <p>Curso intensivo sobre computación cuántica, programación de circuitos cuánticos con Cirq y Python, y desarrollo de protocolos avanzados de encriptación cuántica. Proyecto final presentado ante expertos de Google Quantum AI, AWS, NVIDIA, NASA QuAIL y NIST.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Escuela de Computación de Alto Rendimiento y Taller de Supercomputación Kabré (2023 - 2024)</h3>
-        <span>CENAT, Costa Rica</span>
-        <p>Formación en HPC, paradigmas de programación paralela, uso de GPUs y optimización de código en el supercomputador Kabré.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Análisis Avanzado con Python (2023)</h3>
-        <span>Grow Up Data Analytics</span>
-        <p>Aprendí a extraer conocimientos de conjuntos de datos utilizando librerías de Python, limpiar y presentar datos de forma interactiva e identificar tendencias y observaciones significativas.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Curso Internacional sobre los Objetivos de Desarrollo Sostenible (2021)</h3>
-        <span>Red Internacional de Promotores ODS</span>
-        <p>Capacitación en profundidad sobre los ODS de la ONU y su aplicación en contextos académicos y profesionales. Adquirí conciencia sobre los desafíos globales y estrategias para abordarlos.</p>
+        <p>Intermedio (B1)</p>
       </div>
     </div>
   </section>
 
-  <!-- Contacto -->
+  <!-- Certificates & Courses Section -->
+  <section id="certs" class="container">
+    <h2>Certificados y Cursos</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Programa de Computación Cuántica – Qubit by Qubit (2023 – 2024)</h3>
+        <span>The Coding School, California</span>
+        <p>Programa intensivo en computación cuántica con Cirq y Python. Proyecto final seleccionado por expertos de Google Quantum AI, NASA QuAIL y NIST.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Escuela de HPC y Taller Kabré (2023 – 2024)</h3>
+        <span>CeNAT, Costa Rica</span>
+        <p>Formación en HPC, programación paralela, uso de GPU y optimización de código en el supercomputador Kabré.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Analítica Avanzada con Python (2023)</h3>
+        <span>Grow Up Data Analytics</span>
+        <p>Curso sobre flujos de análisis de datos en Python, incluyendo limpieza, visualización e interpretación de resultados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contacto</h2>
-    <p>¿Tienes una idea de proyecto o deseas colaborar? ¡Conversemos!</p>
+    <p>Para colaboraciones, proyectos o consultas de investigación, no dudes en escribirme.</p>
     <div class="social-icons">
-      <a href="mailto:jjavierf@proton.me" title="Correo electrónico">&#9993;</a>
-      <a href="tel:+50671409536" title="Teléfono">&#9742;</a>
-      <a href="https://www.linkedin.com/in/j-javier-fernandez" target="_blank" title="LinkedIn">
-        <img src="/assets/imgs/icons/linkedin.png" alt="Icono de Linkedin" style="height: 20px; width: 20px;">
+      <a href="mailto:jjavierf@proton.me" title="Email">&#9993;</a>
+      <a href="https://www.linkedin.com/in/j-javier-fernandez" target="_blank" title="LinkedIn" rel="noopener">
+        <img src="/assets/imgs/icons/linkedin.png" alt="Icono de LinkedIn" style="height: 20px; width: 20px;">
       </a>
-      <a href="https://github.com/jjavierf64" target="_blank" title="GitHub">
+      <a href="https://github.com/jjavierf64" target="_blank" title="GitHub" rel="noopener">
         <img src="/assets/imgs/icons/github.png" alt="Icono de GitHub" style="height: 20px; width: 20px;">
       </a>
     </div>
