@@ -7,8 +7,10 @@ services:
     restart: always
 
   jjfdez:
-    build: ./jjfdez
+    build:
+      context: ./jjfdez
+      target: prod
     container_name: jjfdez
     ports:
       - "8081:80"
-    restart: always
+    restart: unless-stopped
